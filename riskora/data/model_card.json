@@ -1,0 +1,493 @@
+{
+  "model_name": "RISKORA-ML-RandomForest-v1.0",
+  "champion_architecture": "Random Forest",
+  "version": "1.0.0",
+  "dataset_name": "Kaggle Loan Approval Prediction Dataset (architsharma01)",
+  "total_training_records": 4269,
+  "calibration_method": "Sigmoid CalibratedClassifierCV (3-Fold)",
+  "evaluation_metrics": {
+    "Logistic Regression": {
+      "roc_auc": 0.9744,
+      "pr_auc": 0.9519,
+      "brier_score": 0.056,
+      "accuracy": 0.9335,
+      "precision_biz": 0.8845,
+      "recall_biz": 0.948,
+      "f1_biz": 0.9152,
+      "business_threshold": 0.35,
+      "confusion_matrix": {
+        "tn": 614,
+        "fp": 50,
+        "fn": 21,
+        "tp": 383
+      },
+      "calibration_curve": [
+        {
+          "pred": 0.02,
+          "true": 0.0055
+        },
+        {
+          "pred": 0.1868,
+          "true": 0.0968
+        },
+        {
+          "pred": 0.3139,
+          "true": 0.4167
+        },
+        {
+          "pred": 0.4444,
+          "true": 0.65
+        },
+        {
+          "pred": 0.565,
+          "true": 0.7209
+        },
+        {
+          "pred": 0.6906,
+          "true": 0.9111
+        },
+        {
+          "pred": 0.8199,
+          "true": 0.9492
+        },
+        {
+          "pred": 0.963,
+          "true": 0.9496
+        }
+      ],
+      "roc_curve": [
+        {
+          "fpr": 0.0,
+          "tpr": 0.0
+        },
+        {
+          "fpr": 0.0015,
+          "tpr": 0.2426
+        },
+        {
+          "fpr": 0.003,
+          "tpr": 0.2822
+        },
+        {
+          "fpr": 0.006,
+          "tpr": 0.2921
+        },
+        {
+          "fpr": 0.0075,
+          "tpr": 0.2995
+        },
+        {
+          "fpr": 0.0105,
+          "tpr": 0.3193
+        },
+        {
+          "fpr": 0.012,
+          "tpr": 0.4035
+        },
+        {
+          "fpr": 0.0151,
+          "tpr": 0.4332
+        },
+        {
+          "fpr": 0.0166,
+          "tpr": 0.5074
+        },
+        {
+          "fpr": 0.0196,
+          "tpr": 0.6411
+        },
+        {
+          "fpr": 0.0211,
+          "tpr": 0.6634
+        },
+        {
+          "fpr": 0.0241,
+          "tpr": 0.7005
+        },
+        {
+          "fpr": 0.0271,
+          "tpr": 0.7995
+        },
+        {
+          "fpr": 0.0301,
+          "tpr": 0.8243
+        },
+        {
+          "fpr": 0.0361,
+          "tpr": 0.8292
+        },
+        {
+          "fpr": 0.0422,
+          "tpr": 0.8366
+        },
+        {
+          "fpr": 0.0437,
+          "tpr": 0.8762
+        },
+        {
+          "fpr": 0.0512,
+          "tpr": 0.8861
+        },
+        {
+          "fpr": 0.0542,
+          "tpr": 0.8911
+        },
+        {
+          "fpr": 0.0587,
+          "tpr": 0.9183
+        },
+        {
+          "fpr": 0.0633,
+          "tpr": 0.9307
+        },
+        {
+          "fpr": 0.0678,
+          "tpr": 0.9406
+        },
+        {
+          "fpr": 0.0708,
+          "tpr": 0.9455
+        },
+        {
+          "fpr": 0.0783,
+          "tpr": 0.948
+        },
+        {
+          "fpr": 0.0798,
+          "tpr": 0.9579
+        },
+        {
+          "fpr": 0.0858,
+          "tpr": 0.9604
+        },
+        {
+          "fpr": 0.0873,
+          "tpr": 0.9653
+        },
+        {
+          "fpr": 0.0919,
+          "tpr": 0.9703
+        },
+        {
+          "fpr": 0.0964,
+          "tpr": 0.9752
+        },
+        {
+          "fpr": 0.1084,
+          "tpr": 0.9802
+        },
+        {
+          "fpr": 0.1205,
+          "tpr": 0.9901
+        },
+        {
+          "fpr": 0.3449,
+          "tpr": 0.9926
+        },
+        {
+          "fpr": 0.8313,
+          "tpr": 0.9975
+        },
+        {
+          "fpr": 1.0,
+          "tpr": 1.0
+        }
+      ]
+    },
+    "Random Forest": {
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "brier_score": 0.0017,
+      "accuracy": 0.9963,
+      "precision_biz": 0.995,
+      "recall_biz": 0.995,
+      "f1_biz": 0.995,
+      "business_threshold": 0.35,
+      "confusion_matrix": {
+        "tn": 662,
+        "fp": 2,
+        "fn": 2,
+        "tp": 402
+      },
+      "calibration_curve": [
+        {
+          "pred": 0.0024,
+          "true": 0.0
+        },
+        {
+          "pred": 0.1858,
+          "true": 0.0
+        },
+        {
+          "pred": 0.3171,
+          "true": 0.5
+        },
+        {
+          "pred": 0.4608,
+          "true": 0.0
+        },
+        {
+          "pred": 0.5187,
+          "true": 1.0
+        },
+        {
+          "pred": 0.693,
+          "true": 1.0
+        },
+        {
+          "pred": 0.8253,
+          "true": 1.0
+        },
+        {
+          "pred": 0.9968,
+          "true": 1.0
+        }
+      ],
+      "roc_curve": [
+        {
+          "fpr": 0.0,
+          "tpr": 0.0
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.0025
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.995
+        },
+        {
+          "fpr": 0.003,
+          "tpr": 0.995
+        },
+        {
+          "fpr": 0.003,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 1.0,
+          "tpr": 1.0
+        }
+      ]
+    },
+    "Gradient Boosting": {
+      "roc_auc": 1.0,
+      "pr_auc": 1.0,
+      "brier_score": 0.0023,
+      "accuracy": 0.9972,
+      "precision_biz": 0.9975,
+      "recall_biz": 0.995,
+      "f1_biz": 0.9963,
+      "business_threshold": 0.35,
+      "confusion_matrix": {
+        "tn": 663,
+        "fp": 1,
+        "fn": 2,
+        "tp": 402
+      },
+      "calibration_curve": [
+        {
+          "pred": 0.0042,
+          "true": 0.0
+        },
+        {
+          "pred": 0.1573,
+          "true": 0.3333
+        },
+        {
+          "pred": 0.283,
+          "true": 0.25
+        },
+        {
+          "pred": 0.4038,
+          "true": 0.5
+        },
+        {
+          "pred": 0.5371,
+          "true": 1.0
+        },
+        {
+          "pred": 0.6881,
+          "true": 1.0
+        },
+        {
+          "pred": 0.9977,
+          "true": 1.0
+        }
+      ],
+      "roc_curve": [
+        {
+          "fpr": 0.0,
+          "tpr": 0.0
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.0025
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.0347
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.0421
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.0446
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.052
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.2104
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.2153
+        },
+        {
+          "fpr": 0.0,
+          "tpr": 0.9926
+        },
+        {
+          "fpr": 0.0015,
+          "tpr": 0.9926
+        },
+        {
+          "fpr": 0.0015,
+          "tpr": 0.995
+        },
+        {
+          "fpr": 0.0045,
+          "tpr": 0.995
+        },
+        {
+          "fpr": 0.0045,
+          "tpr": 0.9975
+        },
+        {
+          "fpr": 0.006,
+          "tpr": 0.9975
+        },
+        {
+          "fpr": 0.006,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.5286,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.5316,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.878,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.881,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.9127,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 0.9157,
+          "tpr": 1.0
+        },
+        {
+          "fpr": 1.0,
+          "tpr": 1.0
+        }
+      ]
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "cibil_score",
+      "importance": 0.8332
+    },
+    {
+      "feature": "loan_term",
+      "importance": 0.0641
+    },
+    {
+      "feature": "loan_to_income",
+      "importance": 0.0374
+    },
+    {
+      "feature": "asset_to_loan_ratio",
+      "importance": 0.0195
+    },
+    {
+      "feature": "loan_amount",
+      "importance": 0.0075
+    },
+    {
+      "feature": "luxury_assets_value",
+      "importance": 0.0068
+    },
+    {
+      "feature": "total_assets",
+      "importance": 0.0064
+    },
+    {
+      "feature": "residential_assets_value",
+      "importance": 0.0058
+    },
+    {
+      "feature": "commercial_assets_value",
+      "importance": 0.0054
+    },
+    {
+      "feature": "income_annum",
+      "importance": 0.0053
+    },
+    {
+      "feature": "bank_asset_value",
+      "importance": 0.0046
+    },
+    {
+      "feature": "no_of_dependents",
+      "importance": 0.002
+    },
+    {
+      "feature": "self_employed",
+      "importance": 0.0011
+    },
+    {
+      "feature": "education",
+      "importance": 0.0009
+    }
+  ],
+  "input_features": [
+    "income_annum",
+    "loan_amount",
+    "loan_term",
+    "cibil_score",
+    "no_of_dependents",
+    "residential_assets_value",
+    "commercial_assets_value",
+    "luxury_assets_value",
+    "bank_asset_value",
+    "total_assets",
+    "asset_to_loan_ratio",
+    "loan_to_income",
+    "education",
+    "self_employed"
+  ],
+  "risk_thresholds": {
+    "low_risk_max_pd": 0.15,
+    "medium_risk_max_pd": 0.4,
+    "high_risk_min_pd": 0.4
+  },
+  "score_mapping": {
+    "description": "Risk Score (0 - 100). Higher score indicates higher probability of default/rejection.",
+    "formula": "RiskScore = round(clip(PD * 100 / 0.50, 0, 100))"
+  }
+}
